@@ -28,8 +28,6 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
-
-
   <link rel="stylesheet" href="css/page.css">
   <!-- Font Awesome -->
 
@@ -74,7 +72,6 @@
             ?>
             <li>
 
-
             </li>
 
           </ul>
@@ -95,11 +92,8 @@
 
         </div>
 
-
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header" style="color: #fff;">WELCOME Admin,</li>
-
-
 
           <li><a href="index.php?"><i class="fa fa-home"></i> Home </a>
 
@@ -118,33 +112,6 @@
 
             </ul>
           </li>
-
-
-
-
-
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-lock"></i>
-              <span> Security</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-down pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="password.php"><i class="fa fa-refresh"></i>Change Password</a></li>
-
-
-
-            </ul>
-          </li>
-
-          <li><a href="log-outa.php">
-              <i class="fa  fa-sign-out"></i> Log-out</a>
-          </li>
-          <li><a href="settings.php">
-              <i class="fa  fa-cog"></i> Settings</a>
-          </li>
           <li><a href="addwallet.php">
               <i class="fa  fa-plus"></i> Admin Wallet</a>
           </li>
@@ -157,17 +124,17 @@
           <li><a href="create_nft.php">
               <i class="fa  fa-plus"></i>Create NFT</a>
           </li>
-          <li><a href="create_land.php">
+          <!-- <li><a href="create_land.php">
               <i class="fa  fa-plus"></i>Create Land</a>
-          </li>
+          </li> -->
 
 
           <li><a href="mynft.php">
               <i class="fa  fa-archive"></i>My NFTs</a>
           </li>
-          <li><a href="myland.php">
+          <!-- <li><a href="myland.php">
               <i class="fa  fa-archive"></i>My Lands</a>
-          </li>
+          </li> -->
 
 
           <li class="treeview">
@@ -202,12 +169,11 @@
 
               <li><a href="pending_nft.php"><i class="fa fa-archive"></i> Pending NFTs</a></li>
 
-
             </ul>
           </li>
 
 
-          <li class="treeview">
+          <!-- <li class="treeview">
             <a href="#">
               <i class="fa fa-archive"></i>
               <span>Lands Management</span>
@@ -225,7 +191,7 @@
 
 
             </ul>
-          </li>
+          </li> -->
 
           <li class="treeview">
             <a href="#">
@@ -236,16 +202,28 @@
               </span>
             </a>
             <ul class="treeview-menu">
-
-
-
               <li><a href="sendmail.php"><i class="fa fa-eye"></i>Send Mail</a></li>
-
             </ul>
           </li>
 
-
-
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-lock"></i>
+              <span> Security</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-down pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="password.php"><i class="fa fa-refresh"></i>Change Password</a></li>
+            </ul>
+          </li>
+          <li><a href="settings.php">
+              <i class="fa  fa-cog"></i> Settings</a>
+          </li>
+          <li><a href="log-outa.php">
+              <i class="fa  fa-sign-out"></i> Log-out</a>
+          </li>
         </ul>
       </section>
       <!-- /.sidebar -->

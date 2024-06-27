@@ -113,7 +113,7 @@ $token1 = substr($token1, 0, 6);
 							<a href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="Logo" width="150"></a>
 							<hr>
 							<h1 class="mb-4">NFT Login</h1>
-							<p style="color:red;">Login to purchase NFT/Land</p>
+							<p style="color:red;">Login to purchase NFT</p>
 							<!-- Form -->
 							<form action="#" method="post" id="login-form">
 								<?php if ($msg != "") echo "<div style='padding:20px;background-color:#dce8f7;color:black'> $msg</div class='btn btn-success'>" . "";  ?>
@@ -176,7 +176,7 @@ $token1 = substr($token1, 0, 6);
 						<div class="login-right-wrap">
 							<a href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="Logo" width="150"></a>
 							<hr>
-							<h1 class="mb-4">NFT/Land Register</h1>
+							<h1 class="mb-4">NFT Register</h1>
 
 							<!-- Form -->
 							<form action="#" method="post" id="register-form">

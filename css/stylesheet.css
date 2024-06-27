@@ -48,8 +48,8 @@ body, html {
 }
 
 body {
-  background: #533BAD;
-  color: #4c4d4d;
+  background: #04093f;
+  color: #ffffff;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
 }
@@ -116,7 +116,7 @@ a, a:focus {
 }
 
 a:hover, a:active {
-  color: #000000;
+  color: #000;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -154,7 +154,7 @@ iframe {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1e1d1c;
+  color: #807c7c;
   font-family: "Rubik", sans-serif;
 }
 
