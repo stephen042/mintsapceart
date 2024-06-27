@@ -43,7 +43,7 @@ include 'header.php'; ?>
 <div class="col-md-12">
   <div class="alert alert-primary bg-dark">
 
-    <h6>Mint Nft now to collect the rearest collections of Nfts available on NFT Open Wave Digital NFT Trading Company </h6>
+    <h6>Mint Nft now to collect the realest collections of Nfts available on NFT Open Wave Digital NFT Trading Company </h6>
     <h6>NOTE: NFT purchase is based on the ethereum network only </h6>
 
   </div>
@@ -125,8 +125,7 @@ include 'header.php'; ?>
   }
 </style>
 
-<center>
-  <div class="row1 row">
+  <div class="row1 row m-0">
     <div class="column1 ">
       <div class="card1">
         <small>WALLET BALANCE</small>
@@ -135,12 +134,12 @@ include 'header.php'; ?>
     </div>
 
     
-  <div class="column1">
-    <div class="card2">
-      <small>GAS FEE</small>
-      <h2 style="font-weight: 700;"><small><?php echo $gasfee; ?> ETH</small></h2>
+    <div class="column1">
+      <div class="card2">
+        <small>GAS FEE</small>
+        <h2 style="font-weight: 700;"><small><?php echo $gasfee; ?> ETH</small></h2>
+      </div>
     </div>
-  </div>
 
 
     <div class="column1 ">
@@ -153,9 +152,6 @@ include 'header.php'; ?>
 
 
   </div>
-
-</center>
-
 
 <br>
 
