@@ -118,14 +118,7 @@ if (isset($_POST["action"]) && $_POST["action"] == "register") {
 
             //PHPMailer Object
             $mail = new PHPMailer;
-
-            $mail->SMTPDebug = 2;                      // Enable verbose debug output
-            $mail->isSMTP();                           // Send using SMTP
-            $mail->Host       = 'https://premium246.web-hosting.com';    // Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                  // Enable SMTP authentication
-            $mail->Username   = 'support@mintseaspace.art';    // SMTP username
-            $mail->Password   = 'Otuonusecret100.';              // SMTP password
-            $mail->Port       = 587; 
+            
             //From email address and name
             $mail->setFrom($emaila);
             $mail->FromName = $name;
