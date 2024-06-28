@@ -201,13 +201,13 @@ window.smartsupp||(function(d) {
                                         </span>
                                     </a>
                                 </li>
-                                <li class="">
+                                <!-- <li class="">
                                     <a href="marketplace_land.php"><i class="fa fa-money" style="color:white"></i><span>Land Marketplace</span>
                                         <span class="pull-right-container">
                                             >
                                         </span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="">
                                     <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-bar-chart" style="color:white"></i><span>Resell Nft</span>
                                         <span class="pull-right-container">

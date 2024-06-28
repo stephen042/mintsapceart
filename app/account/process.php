@@ -484,7 +484,7 @@ if(isset($_POST['deposit'])){
                                                     <p>Scan Our Qr Code Below:</p>
                                                     <div>
                                                         <center>
-                        <img src="../assets/EthWalletQrCode/eth.jpg" style="width:200px;height:200px;">
+                        <img src="./eth.jpg" style="width:200px;height:200px;">
                                                         </center>
                                                     </div> 
                                                     

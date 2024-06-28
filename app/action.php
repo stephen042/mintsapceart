@@ -226,11 +226,9 @@ if (isset($_POST["action"]) && $_POST["action"] == "register") {
                   ';
             if (!$mail->send()) {
             } else {
-               // die("here");
             }
             echo "register";
          } else {
-            // die("here failed");
             echo "Something went wrong. Please try again later.";
          }
       }
@@ -300,6 +298,7 @@ if (isset($_POST["action"]) && $_POST["action"] == "login") {
                $row = mysqli_fetch_array($result1);
 
                $uverify = $row['verify'];
+               
                if ($uverify == 0 || $uverify == 1) {
                   $_SESSION['email'] = $row['email'];
 
