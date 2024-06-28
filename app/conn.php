@@ -1,8 +1,8 @@
 <?php
 error_reporting(0);
 
-// $link = mysqli_connect("localhost","ipzsydnw_mintseaspaceart","ipzsydnw_mintseaspaceart","ipzsydnw_mintseaspaceart");
-$link = mysqli_connect("localhost","root","","mintjslw_mintseaspace","3308");
+$link = mysqli_connect("localhost","ipzsydnw_mintseaspaceart","ipzsydnw_mintseaspaceart","ipzsydnw_mintseaspaceart");
+// $link = mysqli_connect("localhost","root","","mintjslw_mintseaspace","3308");
 
 // Check connection
 if (mysqli_connect_errno())
