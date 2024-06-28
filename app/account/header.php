@@ -186,13 +186,13 @@ window.smartsupp||(function(d) {
                                     </a>
                                 </li>
 
-                                <li class="">
+                                <!-- <li class="">
                                     <a href="connect" target="_blank"><i class="fa fa-money" style="color:white"></i><span>Connect Wallet </span>
                                         <span class="pull-right-container">
                                             >
                                         </span>
                                     </a>
-                                </li>
+                                </li> -->
 
                                 <li class="">
                                     <a href="marketplace.php"><i class="fa fa-money" style="color:white"></i><span>NFT Marketplace</span>

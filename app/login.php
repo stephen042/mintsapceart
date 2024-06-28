@@ -83,7 +83,20 @@ $token1 = substr($token1, 0, 6);
 
 
 
+	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+	<!-- Smartsupp Live Chat script -->
+	<script type="text/javascript">
+	var _smartsupp = _smartsupp || {};
+	_smartsupp.key = '4460d305585395c3a9e5a245745961f742efcb2d';
+	window.smartsupp||(function(d) {
+		var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+		s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+		c.type='text/javascript';c.charset='utf-8';c.async=true;
+		c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+	})(document);
+	</script>
+	<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 
 
 
@@ -117,7 +130,7 @@ $token1 = substr($token1, 0, 6);
 							<!-- Form -->
 							<form action="#" method="post" id="login-form">
 								<?php if ($msg != "") echo "<div style='padding:20px;background-color:#dce8f7;color:black'> $msg</div class='btn btn-success'>" . "";  ?>
-								<?php if (isset($_GET['success']) && $msg == "") echo "<div style='padding:20px;background-color:#dce8f7;color:black'> You have successfully registered. A mail has been sent to you to verify your email. Verify your email to login.</div class='btn btn-success'>" . "";  ?>
+								<?php if (isset($_GET['success']) && $msg == "") echo "<div style='padding:20px;background-color:#dce8f7;color:black'> You have successfully registered. Please Login with your credentials</div class='btn btn-success'>" . "";  ?>
 								<div id="loginAlert" style="background: #c10909;color: #fff;padding: 10px;margin-bottom: 6px;"></div>
 								<div class="form-group">
 									<input class="form-control" type="email" name="email" id="email" placeholder="Email" required value="">
@@ -285,21 +298,6 @@ $token1 = substr($token1, 0, 6);
 
 	<script src="assets/php/js/index.js"></script>
 
-	<!--Start of Tawk.to Script-->
-	<script type="text/javascript">
-		var Tawk_API = Tawk_API || {},
-			Tawk_LoadStart = new Date();
-		(function() {
-			var s1 = document.createElement("script"),
-				s0 = document.getElementsByTagName("script")[0];
-			s1.async = true;
-			s1.src = 'https://embed.tawk.to/629f1aec7b967b117993470b/1g4uo2c3b';
-			s1.charset = 'UTF-8';
-			s1.setAttribute('crossorigin', '*');
-			s0.parentNode.insertBefore(s1, s0);
-		})();
-	</script>
-	<!--End of Tawk.to Script-->
 </body>
 
 
