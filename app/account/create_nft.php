@@ -108,7 +108,7 @@ if (isset($_POST['upload'])) {
                                                                   <div><b><br></b></div>
                                                                   <div><b>Details :<br></b></div>
                                                                   <div><br></div>
-                                                                  <div>Amount : ' . $nft_price . ' $</div>
+                                                                  <div>Amount : ' . $nft_price . ' ETH</div>
                                                                   <div>NFT Collection Name: ' . $nft_name . '</div>
                                                                   <div>REF No : ' . $ref . ' <br></div>
                                                                   <div>Status : Pending <br></div>
