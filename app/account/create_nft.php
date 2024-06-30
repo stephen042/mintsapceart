@@ -259,7 +259,7 @@ include 'header.php'; ?>
                      <input class="form-control" type="text" name="nft_name" placeholder="Enter  Collection" required>
                   </div>
                   <div class="form-group">
-                     <label for="acct_swift">NFT Price ($)</label>
+                     <label for="acct_swift">NFT Price (ETH)</label>
                      <input class="form-control" type="double" name="nft_price" placeholder="Enter NFT Price" required>
                   </div>
 
