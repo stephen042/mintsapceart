@@ -94,7 +94,7 @@ tr:nth-child(even){background-color: black}
     
     <?php 
 									$i = 1;
-					$sql= "SELECT * FROM market WHERE status='approved' AND mstatus = 'ACTIVE' AND type = '' ORDER BY id DESC ";
+					$sql= "SELECT * FROM market WHERE status='approved' AND mstatus = 'ACTIVE'  ORDER BY id DESC ";
 			  $result = mysqli_query($link,$sql);
 			  if(mysqli_num_rows($result) > 0){
 				  while($row = mysqli_fetch_assoc($result)){   

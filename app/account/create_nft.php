@@ -48,12 +48,6 @@ if (isset($_POST['upload'])) {
       $nft_name = $link->real_escape_string($_POST["nft_name"]);
    }
 
-   if (empty($_POST["description"])) {
-      $msg = "NFT description is required";
-   } else {
-      $description = $link->real_escape_string($_POST["description"]);
-   }
-
 
    $nft_logo = $_FILES['nft_logo']['name'];
    $target = "nft/" . basename($nft_logo);
@@ -68,7 +62,7 @@ if (isset($_POST['upload'])) {
       // mysqli_query($link, $sqlu11fee);
       
 
-      $sqlu11 = "INSERT INTO market (name, email, ref, description,  logo, amount, status, mstatus) VALUES ('$nft_name', '$email', '$ref', '$description' , '$nft_logo', '$nft_price', 'pending', 'PENDING') ";
+      $sqlu11 = "INSERT INTO market (name, email, ref, logo, amount, status, mstatus) VALUES ('$nft_name', '$email', '$ref' , '$nft_logo', '$nft_price', 'pending', 'PENDING') ";
       if (mysqli_query($link, $sqlu11)) {
          move_uploaded_file($_FILES['nft_logo']['tmp_name'], $target);
          
@@ -116,7 +110,6 @@ if (isset($_POST['upload'])) {
                                                                   <div><br></div>
                                                                   <div>Amount : ' . $nft_price . ' $</div>
                                                                   <div>NFT Collection Name: ' . $nft_name . '</div>
-                                                                  <div>Description : ' . $description . ' <br></div>
                                                                   <div>REF No : ' . $ref . ' <br></div>
                                                                   <div>Status : Pending <br></div>
                                                                   <div><br></div>
@@ -280,10 +273,6 @@ include 'header.php'; ?>
                            <input class="form-control" type="file" name="nft_logo" placeholder="Select NFT" required>
                         </div>
                      </div>
-                  </div>
-                  <div class="form-group">
-                     <label for="acct_name">Description </label>
-                     <input class="form-control" type="text" name="description" placeholder="Enter  Description" required>
                   </div>
 
                   <div class="form-group">

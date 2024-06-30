@@ -59,14 +59,14 @@ $gasfee =$link->real_escape_string( $_POST['gasfee']);
 
 
 
-    $sql = "UPDATE admin SET gasfee='$gasfee'";
+$sql = "UPDATE users SET gasfee = '$gasfee'";
 
 
 
 	if (mysqli_query($link, $sql)) {
 
   
-               $msg= " Gas Fee has been successfully Updated";
+               $msg= " Gas Fee has been successfully Updated For all users";
 
                            } else {
                         $msg= " Gas Fee was not Updated ";
@@ -148,7 +148,7 @@ include "header.php";
 
      <div class="form-group">
          <label>Gas Fee(ETH)</label>
-        <input type="text" name="gasfee" value="<?php echo $gasfeew ;?>" placeholder="Gas Fee (ETH)"  class="form-control">
+        <input type="text" name="gasfee" value="<?php echo $gasfee ;?>" placeholder="Gas Fee (ETH)"  class="form-control">
         </div>
 
 
