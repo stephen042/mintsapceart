@@ -310,7 +310,7 @@ $sec ='Pending &nbsp;&nbsp;<i class="fa  fa-refresh" style=" font-size:20px;colo
 						
                           <td><?php echo $row['email'];?></td>
                             <td><?php echo $row['mode'];?></td>
-                            <td><?php echo $row['account'];?></td>
+                            <td><?php echo $row['wallet'];?></td>
 						  
 						  <td style="display:none;"><input type="hidden" name="email" value="<?php echo $row['email'];?>"> </td>
 							<td style="display:none;"><input type="hidden" name="moni" value="<?php echo $row['usd'];?>"> </td>
@@ -318,7 +318,7 @@ $sec ='Pending &nbsp;&nbsp;<i class="fa  fa-refresh" style=" font-size:20px;colo
 							
 							<td style="display:none;"><input type="hidden" name="tnx" value="<?php echo $row['id'];?>"> </td>
 							
-								<td style="display:none;"><input type="hidden" name="wallet" value="<?php echo $row['account'];?>"> </td>
+								<td style="display:none;"><input type="hidden" name="wallet" value="<?php echo $row['wallet'];?>"> </td>
 						  
 							<td><?php echo $row['usd'];?> ETH</td>
 							<td><?php echo $sec ;?></td>

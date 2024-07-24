@@ -143,7 +143,7 @@ if(isset($_POST['deposit'])){
                     
                 }else{
                
-                $sql = "INSERT INTO btc (usd,cointype,mode,allamount,email,status,tnxid,type,timeout,date)
+                $sql = "INSERT INTO btc (usd, cointype, mode,allamount,email,status,tnxid,type,timeout,date)
                         VALUES ('$amount','Ethereum','Instant','$amount','$email','pending','$tnx_id','Deposit','$timeout','$wdate')";
                         
                         if (mysqli_query($link, $sql)) {
