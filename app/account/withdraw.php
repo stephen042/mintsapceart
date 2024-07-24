@@ -8,6 +8,7 @@ include "../config.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 $msg = "";
 if (isset($_SESSION['email'])) {
 
@@ -59,11 +60,11 @@ if (isset($_POST['withdraw'])) {
 
 
    if (empty($msg)) {
-   
-      $tnx_id = "tnxW".rand(100000000000, 999999999999)."mint";
+
+      $tnx_id = "tnxW" . rand(100000000000, 999999999999) . "mint";
       $sqlu = "UPDATE users SET balance = balance - '$amount' WHERE email = '$email'";
-      
-      
+
+
       if (mysqli_query($link, $sqlu)) {
 
          $sqlu11 = "INSERT INTO btc (usd, cointype, email, wallet, mode, status, type, tnxid) VALUES ('$amount','Ethereum','$email', '$wallet', '$mode', 'Pending', 'Withdrawal', '$tnx_id') ";
@@ -155,9 +156,11 @@ if (isset($_POST['withdraw'])) {
             if ($mail->send()) {
             }
             echo "<script>
-              alert('Your withdraw request of " . $amount . " USD through " . $mode . " has been done successfully! The fund will arrive to your wallet shortly.');
+              alert('Your withdraw request of " . $amount . " USD through " . $mode . " has been done successfully! The fund will arrive to your wallet shortly. Note: The page will reload shortly.');
               </script> ";
-            $msg = " Your withdraw request of $amount USD through $mode has been done successfully! The fund will arrive to your wallet shortly.";
+            // PHP header to reload the page after a delay
+            header("Refresh: 0"); // Refresh the page after 3 seconds
+            exit(); // Ensure no further code is executed
          }
       }
    } else {
@@ -212,7 +215,7 @@ include 'header.php'; ?>
                <div class="col-5">
                   <p class="text-white"><b>Balance:</b></p>
                   <br>
-                  <p class="text-white"><b><?=$msg?></b></p>
+                  <p class="text-white"><b><?= $msg ?></b></p>
                </div>
                <div class="col-7 text-right">
                   <p class="text-white"><?php echo $ubalance; ?> ETH</p>
