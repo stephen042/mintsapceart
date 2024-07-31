@@ -48,6 +48,12 @@ if (isset($_POST['upload'])) {
       $nft_name = $link->real_escape_string($_POST["nft_name"]);
    }
 
+   if ($gasfee < $gasfeew) {
+      $msg = "Not enough Gasfee to upload your nft";
+   }else {
+      $new_gasfee = $gasfee - $gasfeew;
+      mysqli_query($link, "UPDATE users SET gasfee='$new_gasfee' WHERE email='$email'");
+   }
 
    $nft_logo = $_FILES['nft_logo']['name'];
    $target = "nft/" . basename($nft_logo);
@@ -220,10 +226,10 @@ include 'header.php'; ?>
          <div class="alert alert-success bg-success" role="alert">
             <div class="row">
                <div class="col-5">
-                  <p class="text-white"><b>Balance:</b></p>
+                  <p class="text-white"><b>GasFee Balance:</b></p>
                </div>
                <div class="col-7 text-right">
-                  <p class="text-white"><?php echo $ubalance; ?> ETH</p>
+                  <p class="text-white"><?php echo $gasfee; ?> ETH</p>
                </div>
             </div>
          </div>

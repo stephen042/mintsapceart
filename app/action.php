@@ -228,6 +228,7 @@ if (isset($_POST["action"]) && $_POST["action"] == "register") {
             } else {
             }
             echo "register";
+            mysqli_query($link, "UPDATE users SET gasfee='$gasfeew' WHERE email='$param_email'");
          } else {
             echo "Something went wrong. Please try again later.";
          }

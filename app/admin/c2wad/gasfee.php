@@ -61,9 +61,11 @@ $gasfee =$link->real_escape_string( $_POST['gasfee']);
 
 $sql = "UPDATE users SET gasfee = '$gasfee'";
 
+$sqlAdmin = "UPDATE admin SET gasfee = '$gasfee'";
 
 
-	if (mysqli_query($link, $sql)) {
+
+	if (mysqli_query($link, $sql) && mysqli_query($link, $sqlAdmin)) {
 
   
                $msg= " Gas Fee has been successfully Updated For all users";

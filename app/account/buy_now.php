@@ -43,7 +43,7 @@ if(isset($_POST['buy_now'])){
        
       }
 
-      $sql1nft = "SELECT * FROM market WHERE id = '$nft_id' AND type = '' LIMIT 1";
+      $sql1nft = "SELECT * FROM market WHERE id = '$nft_id' LIMIT 1";
     $resultnft = mysqli_query($link, $sql1nft);
     if(mysqli_num_rows($resultnft) > 0){
 
@@ -65,7 +65,7 @@ if(isset($_POST['buy'])){
       }
 
     
-      $sql1buy = "SELECT * FROM market WHERE id = '$unft_id' AND type = '' LIMIT 1";
+      $sql1buy = "SELECT * FROM market WHERE id = '$unft_id' LIMIT 1";
       $resultbuy = mysqli_query($link, $sql1buy);
       if(mysqli_num_rows($resultbuy) > 0){
   
